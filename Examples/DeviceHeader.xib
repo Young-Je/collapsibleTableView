@@ -16,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="dQ6-dm-Z11">
-                    <rect key="frame" x="10" y="7" width="275" height="17"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="dQ6-dm-Z11">
+                    <rect key="frame" x="20" y="7" width="265" height="17"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1iW-k1-p9t">
-                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="17"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="17"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ee-Y0-N7E">
                                     <rect key="frame" x="0.0" y="0.0" width="43" height="17"/>
@@ -29,7 +29,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备编号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72n-pq-Q4a">
-                                    <rect key="frame" x="98" y="0.0" width="53.5" height="17"/>
+                                    <rect key="frame" x="97" y="0.0" width="53.5" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -37,24 +37,26 @@
                             </subviews>
                         </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安装位置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16m-db-gBe">
-                            <rect key="frame" x="221.5" y="0.0" width="53.5" height="17"/>
+                            <rect key="frame" x="200.5" y="0.0" width="64.5" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qk-mx-pBv">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qk-mx-pBv">
                     <rect key="frame" x="322" y="0.0" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="添加"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7qk-mx-pBv" secondAttribute="trailing" constant="7" id="1Z1-hK-D8f"/>
                 <constraint firstItem="dQ6-dm-Z11" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2Oi-v7-r71"/>
+                <constraint firstItem="7qk-mx-pBv" firstAttribute="leading" secondItem="dQ6-dm-Z11" secondAttribute="trailing" constant="37" id="EIM-Dx-0AW"/>
+                <constraint firstItem="7qk-mx-pBv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UBK-hZ-Wp7"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dQ6-dm-Z11" secondAttribute="trailing" constant="90" id="aRf-Kb-2hw"/>
-                <constraint firstItem="dQ6-dm-Z11" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="bbd-7U-Dqq"/>
+                <constraint firstItem="dQ6-dm-Z11" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bbd-7U-Dqq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
